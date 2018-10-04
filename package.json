@@ -6,21 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack",
-    "dev:start": "webpack-dev-server"
+    "dev": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.41",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0-beta.41",
     "babel-loader": "^8.0.0-beta.2",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "raw-loader": "^0.5.1",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
+    "d3": "^5.7.0",
     "matter-attractors": "^0.1.6",
     "matter-js": "^0.14.2",
     "metaesquema-util": "git+ssh://git@github.com/simonfan/metaesquema-util.git",

@@ -2,9 +2,12 @@ module.exports = {
 	mode: 'development',
   entry: {
   	'movimento-1': './movimento-1/index.js',
+  	'movimento-2': './movimento-2/index.js',
+  	'movimento-3': './movimento-3/index.js',
+  	'movimento-4': './movimento-4/index.js',
   },
   output: {
-    filename: 'dist/[name].js'
+    filename: '[name].js'
   },
   module: {
 	  rules: [
@@ -14,11 +17,7 @@ module.exports = {
 		    test: /\.js$/,
 		    exclude: /(node_modules|bower_components)/,
 		    use: {
-		      loader: 'babel-loader',
-		      options: {
-		        presets: ['@babel/preset-env'],
-		        plugins: ['transform-object-rest-spread']
-		      }
+		      loader: 'babel-loader'
 		    }
 		  },
 		  
